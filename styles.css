@@ -11,12 +11,12 @@ body {
 
 header {
     background-color: #C6D4FF;
-    height: 40vh;
+    min-height: 40vh;
 }
 
 footer {
     background-color: #FEC196;
-    height: 20vh;
+    min-height: 20vh;
 }
 
 main {
@@ -25,12 +25,12 @@ main {
 
 aside.flex-left {
     background-color: #FACFD7;
-    height: 15vh;
+    min-height: 15vh;
 }
 
 aside.flex-right {
     background-color: #C2EAE9;
-    height: 30vh;
+    min-height: 30vh;
 }
 
 header, footer, aside, main {
@@ -42,12 +42,12 @@ header, footer, aside, main {
     .container{
         display: flex;
         flex-flow: row wrap;
-        height: 50vh;
+        min-height: 50vh;
     }
     aside.flex-right,
     aside.flex-left,
     main{
-        height: inherit;
+        min-height: inherit;
     }
     aside.flex-right,
     aside.flex-left{
