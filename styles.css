@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #C6D4FF;
+    height: 40vh;
+}
+
+footer {
+    background-color: #FEC196;
+    height: 20vh;
+}
+
+main {
+    background-color: #F8EFB6;
+}
+
+aside.flex-left {
+    background-color: #FACFD7;
+    height: 15vh;
+}
+
+aside.flex-right {
+    background-color: #C2EAE9;
+    height: 30vh;
+}
+
+header, footer, aside, main {
+    padding: 1em;
+}
+
+/* ADD YOUR CODE BELOW */
+@media screen and (min-width:768px){
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        height: 50vh;
+    }
+    aside.flex-right,
+    aside.flex-left,
+    main{
+        height: inherit;
+    }
+    aside.flex-right,
+    aside.flex-left{
+        flex: 1;
+    }
+    main{
+        flex: 2;
+    }
+}  
+
